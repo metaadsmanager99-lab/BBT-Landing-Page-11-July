@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Boss Trading | AI Market Analysis</title>
+    
+    <!-- Premium Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    
+    fbq('init', '1757069752136649');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1757069752136649&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    
+    <style>
+        :root {
+            --bg-color: #0B0E14;
+            --card-bg: #151A26;
+            --accent-gold: #FFC107;
+            --text-main: #FFFFFF;
+            --text-dim: #94A3B8;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        
+        body { background-color: var(--bg-color); color: var(--text-main); display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 20px; }
+
+        .landing-card { 
+            max-width: 420px; width: 100%; background: var(--card-bg); border-radius: 24px;
+            padding: 40px 25px; text-align: center; border: 1px solid rgba(255, 193, 7, 0.1);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        .profile-img { 
+            width: 140px; height: 140px; border-radius: 50%; object-fit: cover;
+            border: 4px solid var(--accent-gold); margin-bottom: 25px;
+            box-shadow: 0 0 25px rgba(255, 193, 7, 0.2);
+        }
+
+        h1 { font-size: 28px; font-weight: 800; margin-bottom: 12px; }
+        h1 span { color: var(--accent-gold); }
+        .subtext { font-size: 15px; color: var(--text-dim); margin-bottom: 30px; line-height: 1.6; }
+
+        .btn-join { 
+            display: block; width: 100%; padding: 18px; background: var(--accent-gold);
+            color: #000; font-weight: 800; text-transform: uppercase; text-decoration: none;
+            border-radius: 12px; margin-bottom: 20px; transition: transform 0.2s;
+            box-shadow: 0 10px 20px rgba(255, 193, 7, 0.2);
+        }
+        .btn-join:hover { transform: scale(1.03); }
+
+        .feature-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 30px; }
+        .feature { background: rgba(255,255,255,0.05); padding: 10px; border-radius: 8px; font-size: 12px; color: var(--text-dim); }
+
+        .disclaimer { font-size: 10px; color: #475569; text-align: justify; line-height: 1.6; }
+    </style>
+</head>
+<body>
+
+    <div class="landing-card">
+        <img src="https://www.image2url.com/r2/default/images/1783758568842-68f42a34-4b2e-4b29-9e29-4fe231fb5539.jpg" alt="Binary Boss" class="profile-img">
+        
+        <h1>Master Market Structure <br><span>With Binary Boss</span></h1>
+        <p class="subtext">Join our community for real-time market analysis, algorithmic trading logic, and institutional-grade setups.</p>
+        
+        <a href="https://t.me/+2j0c5MfSswEyYzU1" onclick="handleTracking(event)" class="btn-join">🚀 Join Telegram Community</a>
+
+        <div class="feature-grid">
+            <div class="feature">Live Market Logs</div>
+            <div class="feature">Risk Management</div>
+        </div>
+
+        <div class="disclaimer">
+            <strong>Disclaimer:</strong> This site is not a part of Facebook™ Inc. Trading carries significant risk and is for educational purposes only. Past results do not guarantee future performance.
+        </div>
+    </div>
+
+    <script>
+        // CLIENT-SIDE TRACKING & CAPI LOGIC
+        async function handleTracking(event) {
+            event.preventDefault();
+            const targetUrl = event.currentTarget.href;
+            const CAPI_TOKEN = 'EAAkUIsOvMHgBRzmRtZBGgS4XVXEEaJnyfoKcqCRdFW7q5WNZC9hXBHuA1O9BZBOZAUNcJcZAj3ZBIRjuoFL3EurIklvXi0MNkZBvHka8PTlNoM4lcGTMOvGDohiQcJ3U7InGLNKP1OUjBegj3V0ysU3eJSEJt9MZAjOokeXCTRoXH4IrqxQq1KxWCpl8RGkhaAZDZD';
+
+            // 1. Pixel Browser Event
+            fbq('track', 'Lead', {
+                content_name: 'BBT_Telegram_Join',
+                currency: 'USD',
+                value: 0.00
+            });
+
+            // 2. CAPI Event (Backend logic representation)
+            // Note: In production, do NOT put tokens in HTML. Use a server-side proxy.
+            try {
+                console.log("CAPI Event Triggered for BBT Funnel");
+            } catch (e) {}
+
+            setTimeout(() => { window.location.href = targetUrl; }, 400);
+        }
+    </script>
+</body>
+</html>
